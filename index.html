@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mobile Phone Charger</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.container{
+			width: 600px;
+			height: 600px;
+			/*border: 1px solid black;*/
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		.charger{
+			width: 310px;
+			height: 500px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		.body{
+			width: 115px;
+			height: 155px;
+			background: #444;
+			border-radius: 8px;
+			position: absolute;
+			top: 45px;
+		}
+		.body:before{
+			content: '';
+			width: 15px;
+			height: 45px;
+			background: #a0a0a0;
+			border-radius: 2px 2px 0 0;
+			position: absolute;
+			top: -45px;
+			left: 20px;
+			box-shadow: 60px 0 0 #a0a0a0;
+		}
+		.body:after{
+			content: '';
+			width: 56px;
+			height: 7px;
+			background: #444;
+			border-radius: 0 0 4px 4px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -7px;
+			margin: auto;
+		}
+		.sign{
+			width: 50px;
+			height: 90px;
+			background: #96d738;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			clip-path: polygon(90% 0, 60% 45%, 100% 45%, 10% 100%, 40% 55%, 0 55%);
+		}
+		.connector{
+			width: 44px;
+			height: 55px;
+			background: #444;
+			border-radius: 0 0 22px 22px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -60px;
+			margin: auto;
+		}
+		.cable{
+			width: 126px;
+			height: 136px;
+			border: 10px solid #444;
+			border-top: 0;
+			border-radius: 0 0 64px 64px;
+			position: absolute;
+			top: 256px;
+			left: 53px;
+		}
+		.cable:after{
+			content: '';
+			width: 106px;
+			height: 160px;
+			border: inherit;
+			border-radius: inherit;
+			position: absolute;
+			top: 0;
+			left: 106px;
+			transform-origin: top;
+			transform: rotateX(180deg);
+		}
+		.plug{
+			width: 40px;
+			height: 34px;
+			background: #444;
+			border-radius: 10px 10px 0 0;
+			position: absolute;
+			right: 0;
+			bottom: 210px;
+		}
+		.plug:before{
+			content: '';
+			width: 30px;
+			height: 20px;
+			background: #a0a0a0;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: -20px;
+			margin: auto;
+		}
+		.plug:after{
+			content: '';
+			width: 2px;
+			height: 4px;
+			background: #fff;
+			position: absolute;
+			left: 12px;
+			top: 42px;
+			box-shadow: 12px 0 0 #fff;
+		}
+		.shadow{
+			width: 236px;
+			height: 16px;
+			background: #a0a0a0;
+			border-radius: 50%;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="charger">
+			<div class="body">
+				<div class="sign"></div>
+				<div class="connector"></div>
+			</div>
+			<div class="cable"></div>
+			<div class="plug"></div>
+			<div class="shadow"></div>
+		</div>
+	</div>
+</body>
+</html>
